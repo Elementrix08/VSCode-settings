@@ -1,0 +1,264 @@
+{
+    // Vim
+    "vim.leader": " ",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                ":"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "f"
+            ],
+            "commands": [
+                "fileutils.renameFile"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "r"
+            ],
+            "commands": [
+                "editor.action.startFindReplaceAction"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<Enter>"
+            ],
+            "commands": [
+                "code-runner.run"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "actions.find"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-s>": false,
+        "<C-k>": false,
+        "<C-e>": false
+    },
+    "vim.useSystemClipboard": true,
+    "makefile.loggingLevel": "Debug",
+    // Python
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
+    "python.formatting.provider": "autopep8",
+    // Editor
+    "editor.suggestSelection": "first",
+    "editor.formatOnPaste": true,
+    "editor.cursorWidth": 3,
+    "editor.smoothScrolling": true,
+    "clang-format.executable": "/home/zoro/bin/clang-format",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "550",
+    "editor.fontLigatures": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "on",
+    // Code Runner
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.executorMap": {
+        "python": "clear && python3 $fullFileName",
+        "cpp": "clear && cd $dir && g++ $fullFileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "c": "clear && cd $dir && gcc $fullFileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "java": "clear && java $fullFileName",
+        "javascript": "clear && node $fullFileName"
+    },
+    "code-runner.ignoreSelection": true,
+    "code-runner.temporaryFileName": "temp",
+    "code-runner.saveAllFilesBeforeRun": true,
+    // Terminal
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.copyOnSelection": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.panel.opensMaximized": "never",
+    "window.newWindowDimensions": "fullscreen",
+    "window.title": "${dirty}${activeEditorShort}${separator}Elementrix",
+    "task.quickOpen.detail": false,
+    "problems.showCurrentInStatus": true,
+    "scm.inputFontFamily": "editor",
+    "search.showLineNumbers": true,
+    "debug.console.fontSize": 17,
+    "debug.console.fontFamily": "Fira Code Retina",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "none",
+    "debug.toolBarLocation": "hidden",
+    "terminal.integrated.cursorWidth": 5,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.rightClickBehavior": "default",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.allowMnemonics": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "git.ignoreLegacyWarning": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.glyphMargin": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "terminal.integrated.tabs.showActions": "never",
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.env.windows": {},
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "remote.SSH.remotePlatform": {
+        "lamp.ms.wits.ac.za": "linux"
+    },
+    "workbench.startupEditor": "none",
+    "telemetry.telemetryLevel": "off",
+    "editor.fontSize": 16,
+    "editor.bracketPairColorization.enabled": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.cursorBlinking": "phase",
+    "files.autoSaveDelay": 100,
+    "window.menuBarVisibility": "compact",
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "workbench.sideBar.location": "right",
+    "notebook.globalToolbar": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.showTabs": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.fastScrollSensitivity": 6,
+    "scm.diffDecorations": "none",
+    "editor.find.cursorMoveOnType": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "window.restoreWindows": "none",
+    "window.titleBarStyle": "custom",
+    "editor.minimap.enabled": false,
+    "window.titleSeparator": " ~ ",
+    "editor.occurrencesHighlight": false,
+    "python.terminal.executeInFileDir": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "code-runner.showRunCommandInEditorContextMenu": false,
+    "code-runner.showRunCommandInExplorerContextMenu": false,
+    "code-runner.enableAppInsights": false,
+    "code-runner.customCommand": "",
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.respectShebang": false,
+    "code-runner.runInTerminal": true,
+    "explorer.compactFolders": false,
+    "terminal.integrated.confirmOnKill": "never",
+    "window.restoreFullscreen": true,
+    "editor.suggest.insertMode": "replace",
+    "python.analysis.completeFunctionParens": true,
+    "workbench.editor.titleScrollbarSizing": "large",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.external.linuxExec": "zsh",
+    "terminal.integrated.fontWeight": "normal",
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "editor.guides.indentation": false,
+    "javascript.format.enable": false,
+    // Brackets
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#FFB3BA",
+        "editorBracketHighlight.foreground2": "#B8F4FF",
+        "editorBracketHighlight.foreground3": "#E2FFBA",
+        "editorBracketHighlight.foreground5": "#F5D03F",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
+    },
+    "python.defaultInterpreterPath": "/bin/python3",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.enabled": true,
+    "html.format.enable": false,
+    "editor.suggest.showStatusBar": true,
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+    "makefile.extensionOutputFolder": "./.vscode",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.loggingLevel": "Debug",
+    "C_Cpp.vcFormat.wrap.preserveBlocks": "never",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.vcFormat.indent.braces": true,
+    "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "editor.renderLineHighlight": "none",
+    "workbench.editor.closeOnFileDelete": true,
+    "debug.console.closeOnEnd": true,
+    "editor.overviewRulerBorder": false,
+    "scm.diffDecorationsGutterWidth": 1,
+    "notebook.cellFocusIndicator": "border",
+    "hediet.vscode-drawio.theme": "dark",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "C_Cpp.intelliSenseUpdateDelay": 500,
+    "terminal.integrated.enablePersistentSessions": false,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "One Monokai",
+    "editor.defaultFormatter": "xaver.clang-format",
+    "files.autoSave": "afterDelay",
+    "C_Cpp.default.includePath": [
+        "~/openmpi/include"
+    ],
+    "C_Cpp.clang_format_style": "",
+    "clang-format.language.cpp.style": "file",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_path": "/home/zoro/bin/clang-format",
+    "editor.formatOnSave": true,
+    "workbench.activityBar.visible": false
+}
